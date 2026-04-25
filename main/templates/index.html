@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="hero min-h-[50vh] bg-base-100 rounded-3xl shadow-xl mb-12 p-8">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="max-w-xl">
+              <h1 class="text-5xl font-black leading-none tracking-tight">DATA <span class="text-primary">ENGINEER</span> & <br> WEB DEVELOPER.</h1>
+              <p class="py-6 text-lg opacity-70">Building high-performance pipelines and modern web applications with Django and SQL Server.</p>
+              <div class="flex gap-4">
+                  <a href="#projects" class="btn btn-primary">View My Work</a>
+                  <a class="btn btn-ghost">Download CV</a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="card bg-base-100 shadow-sm border border-base-300 mb-12 overflow-hidden">
+      <div class="card-body flex-col md:flex-row gap-8 items-center">
+          <div class="avatar shadow-xl">
+              <div class="w-32 h-32 rounded-2xl ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="" alt="Profile" />
+              </div>
+          </div>
+
+          <div class="max-w-2xl">
+              <h2 class="text-3xl font-bold tracking-tight mb-4">Behind the Code</h2>
+              <p class="text-lg opacity-70 leading-relaxed indent-4 mb-6">
+                I'm a simple person with a passion for success. After acquiring my BA in <strong>English language</strong> & literature, I travelled through a journey
+                into the retail business, handling clients accounts where I gained high abilities in <strong>conflict resolution and problem-solving</strong> among many other skills.<br>
+              </p>
+              <p class="text-lg opacity-70 leading-relaxed indent-4 mb-6">
+                In mid 2024, I decided to aim for roles with much higher responsibilities, where I can show my skills with constant learning, and I felt drawn into
+                the tech industry.<br> I remember the first time I ran a <strong>Python</strong> script, it felt ridiculously facinating to command a machine to do something
+                that I fully controlled!
+                Silly...I know :p
+              </p>
+              <p class="text-lg opacity-70 leading-relaxed indent-4 mb-6">
+                I've come a loong way from that mindset, I took a leap of faith and was not disappointed.
+                I still have much more to learn, and that is what I especially love about my new career, there's something new to learn every day.
+                I'm always looking for environments that offer a chance for development, I'm passionate about data and analytics along with manipulating that data
+                with SQL and backend code.
+              </p>
+              <p class="text-lg opacity-70 leading-relaxed indent-4 mb-4">
+                After gaining many skills in web development in my current role as a web developer,
+                I'm currently taking courses to effectively and professionally apply <strong>containerization, pipelines</strong>, and overall <strong>data engineering</strong> into my projects.
+              </p>
+          </div>
+      </div>
+  </section>
+
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div class="stat bg-base-100 rounded-2xl shadow-sm border border-base-300">
+          <div class="stat-title">Databases</div>
+          <div class="stat-value text-primary">SQL Server</div>
+          <div class="stat-desc">Managed 1M+ record systems</div>
+      </div>
+      <div class="stat bg-base-100 rounded-2xl shadow-sm border border-base-300">
+          <div class="stat-title">Frameworks</div>
+          <div class="stat-value text-secondary">Django</div>
+          <div class="stat-desc">Clean, decoupled architecture</div>
+      </div>
+      <div class="stat bg-base-100 rounded-2xl shadow-sm border border-base-300">
+          <div class="stat-title">UI Stack</div>
+          <div class="stat-value">T.A.D.</div>
+          <div class="stat-desc">Tailwind, Alpine, DaisyUI</div>
+      </div>
+  </section>
+
+  <section id="projects" class="space-y-8">
+      <h2 class="text-3xl font-bold tracking-tight">Recent Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card bg-base-100 shadow-sm border border-base-300 hover:shadow-lg transition-all">
+              <div class="card-body">
+                  <div class="badge badge-outline">Web Dev</div>
+                  <h2 class="card-title">Warehouse Manager</h2>
+                  <p class="text-sm opacity-70">A professional ERP system bridging legacy SQL Server data with a modern Django identity layer.</p>
+                  <div class="card-actions justify-end mt-4">
+                      <button class="btn btn-sm btn-square btn-ghost">
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          </div>
+  </section>
+{% endblock %}
