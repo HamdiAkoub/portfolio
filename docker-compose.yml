@@ -1,0 +1,24 @@
+networks:
+  main_network:
+    driver: bridge
+services:
+  web:
+    image: hamdi-portfolio:latest
+    container_name: main_container_portfolio
+    env_file:
+      - .env
+    networks:
+      - main_network
+    build: .
+    restart: unless-stopped
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: [ "CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/')" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
