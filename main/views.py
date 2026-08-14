@@ -21,57 +21,55 @@ def warehouse_manager(request):
         "main/warehouse_manager.html",
         {
             "project": {
-                "title": "Warehouse Manager",
-                "tagline": "Selected snippets from the project, built for a "
-                           "local LAN deployment, privately hosted.",
+              "title": "Warehouse Manager",
+              "tagline": "Selected snippets from the project, built for a "
+                         "local LAN deployment, privately hosted.",
                 "stack": [
-                    "Django 5",
-                    "MS SQL Server",
-                    "Waitress (WSGI)",
-                    "WhiteNoise",
-                    "Tailwind + Alpine.js",
-                    "PyArmor + PyInstaller",
-                    "IDE Pycharm",
+                  "Django 5",
+                  "MS SQL Server",
+                  "Integrated into legacy database",
+                  "Waitress (WSGI)",
+                  "WhiteNoise",
+                  "Tailwind + Alpine.js",
+                  "PyArmor + PyInstaller",
+                  "IDE VS Code",
                 ],
             },
             "images": [
-                {"src": f"img_WM/{name}", "caption": name.rsplit(".", 1)[0]}
-                for name in images
+              {"src": f"img_WM/{name}", "caption": name.rsplit(".", 1)[0]}
+              for name in images
             ],
         },
     )
 
 def rest_mgr(request):
-    # Filenames in display order. Caption = filename without extension.
     images = [
-        "Branch_recurr_qry.png",
-        "Clients_recurr_qry.png",
-        "Balance_qry.png",
-        "Cheques_balance.png",
-        "Order_stages.png",
-        "currency_helper.png",
-        "number_sequence_helper.png",
+        "New_order_detection.png",
+        "Guide_normalization.png",
+        "Drivers_report_CTE.png",
+        "Cash_close_incremental.png",
+        "Audit_reconcile.png",
     ]
     return render(
         request,
-        "main/warehouse_manager.html",
+        "main/RestMgr.html",
         {
             "project": {
-                "title": "Warehouse Manager",
+                "title": "Restaurant Manager",
                 "tagline": "Selected snippets from the project, built for a "
                            "local LAN deployment, privately hosted.",
                 "stack": [
                     "Django 5",
                     "MS SQL Server",
-                    "Waitress (WSGI)",
+                    "Integrated into legacy database",
                     "WhiteNoise",
-                    "Tailwind + Alpine.js",
+                    "React",
                     "PyArmor + PyInstaller",
                     "IDE Pycharm",
                 ],
             },
             "images": [
-                {"src": f"img_WM/{name}", "caption": name.rsplit(".", 1)[0]}
+                {"src": f"img_OM/{name}", "caption": name.rsplit(".", 1)[0]}
                 for name in images
             ],
         },
