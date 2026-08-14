@@ -15,5 +15,5 @@ node_modules
 .pytest_cache
 *.log
 .DS_Store
-GEMINI.md
+CLAUDE.md
 staticfiles/

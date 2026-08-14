@@ -6,4 +6,4 @@ __pycache__/
 staticfiles/
 
 # AI
-GEMINI.md
+CLAUDE.md
