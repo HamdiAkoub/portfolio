@@ -5,6 +5,8 @@
 
 {% block content %}
   <style>
+    [x-cloak] { display: none !important; }
+
     .wm-hero {
       width: 100%;
       max-width: 1200px;
@@ -233,6 +235,7 @@
                  alt="{{ img.caption }}"
                  loading="lazy"
                  x-show="current === {{ forloop.counter0 }}"
+                 x-cloak
                  x-transition:enter="transition ease-out duration-200"
                  x-transition:enter-start="opacity-0"
                  x-transition:enter-end="opacity-100"
