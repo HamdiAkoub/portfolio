@@ -22,8 +22,8 @@ def warehouse_manager(request):
         {
             "project": {
               "title": "Warehouse Manager",
-              "tagline": "Selected snippets from the project, built for a "
-                         "local LAN deployment, privately hosted.",
+              "tagline": "Selected snippets from the project, built for "
+                         "local server hosting, publically accessed through subdomains tunneling.",
                 "stack": [
                   "Django 5",
                   "MS SQL Server",
@@ -57,14 +57,20 @@ def rest_mgr(request):
             "project": {
                 "title": "Restaurant Manager",
                 "tagline": "Selected snippets from the project, built for a "
-                           "local LAN deployment, privately hosted.",
+                           "local LAN deployment and API requests from outside the network, privately hosted."
+                           "The project mainly handles receiving live orders on the spot through API requests,"
+                           " where it manages the distribution of these orders between the current active "
+                           "drivers if the order is for delivery, and the handing over to customers if it's a pickup."
+                           "In addition, it keeps and stores records of all orders' drivers, stages, amounts...etc. "
+                           "This data is also used to provide the ability to close the shift of the current employee,"
+                           "and printing detailed summary of that shift.",
                 "stack": [
-                    "Django 5",
-                    "MS SQL Server",
+                    "Django",
+                    "SQL Server",
+                    "React",
                     "Integrated into legacy database",
                     "WhiteNoise",
-                    "React",
-                    "PyArmor + PyInstaller",
+                    "rest set upPyArmor + PyInstaller",
                     "IDE Pycharm",
                 ],
             },
