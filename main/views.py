@@ -70,7 +70,6 @@ def rest_mgr(request):
                     "React",
                     "Integrated into legacy database",
                     "WhiteNoise",
-                    "rest set upPyArmor + PyInstaller",
                     "IDE Pycharm",
                 ],
             },
